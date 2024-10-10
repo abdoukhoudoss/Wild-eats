@@ -1,11 +1,11 @@
 import data from './data.json' with {type: "json"};
 
-const filterButton = document.querySelector(".filter-button")
-const modalFilter = document.querySelector(".modal-filter")
+const filterButton = document.querySelector(".filter-button");
+const modalFilter = document.querySelector(".modal-filter");
 
 filterButton.addEventListener('click', (a) => {
     a.preventDefault();
-    modalFilter.classList.toggle("active")
+    modalFilter.classList.toggle("active");
 })
 
 
@@ -14,16 +14,19 @@ function createRestaurantsArticles (restaurant) {
     const article = document.createElement("article");
     const imageElement = document.createElement('img');
     const nameElement = document.createElement("h2");
+    const containerName = document.createElement('div')
 
     article.classList.add("restaurants-article");
     imageElement.classList.add("image-restaurants-article");
     nameElement.classList.add("name-restaurants-article");
+    containerName.classList.add("container-name-restaurants-article");
 
     imageElement.src = restaurant.image;
     nameElement.innerHTML = restaurant.name;
 
+    containerName.appendChild(nameElement);
     article.appendChild(imageElement);
-    article.appendChild(nameElement);
+    article.appendChild(containerName);
     restaurantsSection.appendChild(article);
 
 }
