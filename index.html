@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script type="module" src="./script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/png" href="./image/icon.png">
-  </head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css" />
+      <script type="module" src="./script.js" defer></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="icon" type="image/png" href="./image/icon.png">
+    </head>
  
+  
+    <body>
         <header>
             <img src="./image/logo.png" alt="logo" class="logo" />
             <a href="#"><img src="./image/menu.png" alt="menu" class="menu" /></a>
         </header>
-    
-    <body>
-        <section>
-            <ul>
-                <li class="filter-button">
-                    <a href="#">Filtres</a>
-                </li>
-                <li class="sort-button">
-                    <a href="#"><img src="./image/sort.png" alt="" /></a>
-                </li>
-            </ul>
+        <main>
+            <section class="filter-section">
+                <ul>
+                    <li class="filter-button">
+                        <a href="#">Filtres</a>
+                    </li>
+                    <li class="sort-button">
+                        <a href="#"><img src="./image/sort.png" alt="" /></a>
+                    </li>
+                </ul>
+                <ul class="modal-filter">
+                    <li><a href="#" class="filter-selection"></a>Fast-Food</li>
+                    <li><a href="#" class="filter-selection"></a>Italien</li>
+                    <li><a href="#" class="filter-selection"></a>Végétarien</li>
+                    <li><a href="#" class="filter-selection"></a>Africain</li>
+                    <li><a href="#" class="filter-selection"></a>Americain</li>
+                </ul>
+            </section>
+            <section class="promo-section">
 
-            <ul class="modal-filter">
-                <li><a href="#" class="filter-selection"></a>Fast-Food</li>
-                <li><a href="#" class="filter-selection"></a>Italien</li>
-                <li><a href="#" class="filter-selection"></a>Végétarien</li>
-                <li><a href="#" class="filter-selection"></a>Africain</li>
-                <li><a href="#" class="filter-selection"></a>Americain</li>
-            </ul>
-        </section>
+            </section>
+            <section class="restaurants-section">
+
+            </section>
+        </main>
     </body>
 </html>
