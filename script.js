@@ -3,9 +3,17 @@ import { data } from './data.js'
 const filterButton = document.querySelector(".filter-button");
 const modalFilter = document.querySelector(".modal-filter");
 
-filterButton.addEventListener('click', (a) => {
-    a.preventDefault();
+filterButton.addEventListener('click', (event) => {
+    event.preventDefault();
     modalFilter.classList.toggle("active");
+})
+
+const sortButton = document.querySelectorAll(".sort-button");
+const modalSort = document.querySelectorAll(".modal-sort");
+
+sortButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    modalSort.classList.toggle("active");
 })
 
 function createRestaurantsArticles (restaurant) {
