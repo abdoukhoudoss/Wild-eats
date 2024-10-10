@@ -28,7 +28,7 @@
         "name": "Feel Real Good",
         "price": "€€€",
         "rating": "5",
-        "image": "./image/img.Feel.jpg",
+        "image": "./image/Feel.jpg",
         "openingHours": [
             "Lundi - Fermé",
             "Mardi - 12h 13h15",
@@ -52,7 +52,7 @@
         "name": "Hao zai",
         "price": "€",
         "rating": "4",
-        "image": "./image/img.hao zai.jpg",
+        "image": "./image/hao-zai.jpg",
         "openingHours": [
             "Lundi - 12h 14h / 19h 22h30",
             "Mardi - 12h 14h / 19h 22h30",
@@ -73,5 +73,4 @@
         "discount":false
     }
     
-
 ]
