@@ -21,6 +21,7 @@
         "delivery": [
             "Livraison",
             "Emporter"
-        ]
+        ],
+        "discount": true
     }
 ]
