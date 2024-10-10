@@ -1,4 +1,5 @@
 [
+    // Restaurant 1
     {
         "name": "Bistrot du Port",
         "price": "€€",
@@ -24,6 +25,7 @@
         ],
         "discount": true
     },
+    // Restaurant 2
     {
         "name": "Feel Real Good",
         "price": "€€€",
@@ -48,6 +50,7 @@
         ],
         "discount":false
     },
+    // Restaurant 3
     {
         "name": "Hao zai",
         "price": "€",
@@ -71,6 +74,138 @@
             "Emporter"
         ],
         "discount":false
-    }
-    
+    },
+    // Restaurant 4
+    {
+        "name": "Officina Gusto",
+        "price": "€€",
+        "rating": "5",
+        "image": "./image/officina.jpg",
+        "openingHours": [
+            "Lundi - Fermé",
+            "Mardi - 08h30 15h",
+            "Mercredi - 08h30 15h / 18h 23h",
+            "Jeudi -  08h30 15h / 18h 23h",
+            "Vendredi - 08h30 15h / 18h 23h",
+            "Samedi - 09h30 00h",
+            "Dimanche - Fermé"
+        ],
+        "filter": [
+            "Pizza",
+            "Italienne"
+        ],
+        "url": "https://www.officinagusto.fr/menus-carte/",
+        "delivery": [
+            "Emporter",
+            "Livraison"
+        ],
+        "discount":false
+    },   
+    // Restaurant 5
+    {
+        "name": "Hedone",
+        "price": "€€",
+        "rating": "4",
+        "image": "./image/hedone.jpg",
+        "openingHours": [
+            "Lundi - Fermé",
+            "Mardi - 20h30 22h30",
+            "Mercredi - 12h 14h / 20h15 22h30",
+            "Jeudi - 12h 14h / 20h15 22h30",
+            "Vendredi - 12h 14h / 20h15 22h30",
+            "Samedi - 12h 14h / 20h15 22h30",
+            "Dimanche - Fermé"
+        ],
+        "filter": [
+            "Gastronomique",
+            "Europeenne"
+        ],
+        "url": "https://www.officinagusto.fr/menus-carte/",
+        "delivery": [
+            "Emporter",
+            "Livraison"
+        ],
+        "discount":false
+    },
+    // Restaurant 6
+    {
+        "name": "Chez Moï",
+        "price": "€€€",
+        "rating": "4",
+        "image": "./image/chez-moi.jpg",
+        "openingHours": [
+            "Lundi - Fermé",
+            "Mardi - 12h00 - 14h00 / 19h30 - 22h00",
+            "Mercredi - 12h00 - 14h00 / 19h30 - 22h00",
+            "Jeudi - 12h00 - 14h00 / 19h30 - 22h00",
+            "Vendredi - Fermé",
+            "Samedi - Fermé",
+            "Dimanche - Fermé"
+        ],
+        "filter": [
+            "Gastronomique",
+            "Asiatique"
+        ],
+        "url": "https://www.chezmoi.fr/carte-emporter.php",
+        "delivery": [
+            "Emporter",
+            "Livraison",
+            "Click & Collect"
+        ],
+        "discount":true
+    },
+    // Reastaurant 7
+    {
+        "name": "Le Ksar",
+        "price": "€€",
+        "rating": "4",
+        "image": "./image/ksar.jpeg",
+        "openingHours": [
+            "Lundi - Fermé",
+            "Mardi - 12h 14h / 19h 22h",
+            "Mercredi -  12h 14h / 19h 22h",
+            "Jeudi -  12h 14h / 19h 22h",
+            "Vendredi -  12h 14h / 19h 23h",
+            "Samedi -  12h 14h / 19h 23h",
+            "Dimanche - Fermé"
+        ],
+        "filter": [
+            "Africaine",
+            "Halal"
+        ],
+        "url": "https://restaurantksar.fr/fr/services",
+        "delivery": [
+            "Emporter",
+            "Livraison"
+        ],
+        "discount":false
+    },
+    // Restaurant 8
+    {
+        "name": "Don Vicenzo",
+        "price": "€€€",
+        "rating": "4",
+        "image": "./image/ksar.jpeg",
+        "openingHours": [
+            "Lundi - 11h 14h30 / 18h30 23h30",
+            "Mardi - 11h 14h30 / 18h30 23h30",
+            "Mercredi -  11h 14h30 / 18h30 23h30",
+            "Jeudi - 11h 14h30 / 18h30 23h30",
+            "Vendredi -  11h 14h30 / 18h30 23h30",
+            "Samedi -  11h 14h30 / 18h30 23h30",
+            "Dimanche - Fermé"
+        ],
+        "filter": [
+            "Gastronomique",
+            "Italienne"
+        ],
+        "url": "https://restaurantksar.fr/fr/services",
+        "delivery": [
+            "Emporter",
+            "Livraison",
+            "Click & Collect"
+        ],
+        "discount":false
+    },
+
 ]
