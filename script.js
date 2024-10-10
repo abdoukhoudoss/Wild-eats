@@ -1,5 +1,3 @@
-import data from './data.json' with {type: "json"};
-
 const filterButton = document.querySelector(".filter-button");
 const modalFilter = document.querySelector(".modal-filter");
 
@@ -8,7 +6,27 @@ filterButton.addEventListener('click', (a) => {
     modalFilter.classList.toggle("active");
 })
 
+const fetchData = async () => {
+    try {
+        const response = await fetch("./data.json")
+        const json = await response.json()
+        return json
+    } catch (error) {
+        console.error(error.message);
+    }
+}
 
+const charlotteDaBoss = async () => {
+    const data = await fetchData()
+    if (data) {
+        createAllRestaurants(data)
+    } else {
+        console.log("Hahahaha t'as merdé");
+        
+    }
+}
+
+function createAllRestaurants(data) {
 function createRestaurantsArticles (restaurant) {
     const restaurantsSection = document.querySelector(".restaurants-section");
     const article = document.createElement("article");
@@ -28,7 +46,9 @@ function createRestaurantsArticles (restaurant) {
     article.appendChild(imageElement);
     article.appendChild(containerName);
     restaurantsSection.appendChild(article);
-
 }
 
 data.forEach(restaurant => createRestaurantsArticles(restaurant));
+}
+
+charlotteDaBoss()
