@@ -1,10 +1,10 @@
 import data from './data.json' with {type: "json"};
 
-const bountonfiltre = document.querySelector(".boutonfiltre")
-const depliant = document.querySelector(".filtre")
+const filterButton = document.querySelector(".filter-button")
+const modalFilter = document.querySelector(".modal-filter")
 
-bountonfiltre.addEventListener('click', (a) => {
+filterButton.addEventListener('click', (a) => {
     a.preventDefault();
-    depliant.classList.toggle("avec")
+    modalFilter.classList.toggle("active")
 })
 
