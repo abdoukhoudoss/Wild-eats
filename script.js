@@ -28,4 +28,5 @@ function createRestaurantsArticles (restaurant) {
     article.appendChild(containerName);
     restaurantsSection.appendChild(article);
 }
+
 data.forEach(restaurant => createRestaurantsArticles(restaurant));
