@@ -38,8 +38,6 @@ function createRestaurantsArticles (restaurant) {
     restaurantsSection.appendChild(article);
 }
 
-data.forEach(restaurant => createRestaurantsArticles(restaurant));
-
 function createPromo (restaurant) {
     const backCarousel = document.createElement("img")
     const H2carousel = document.createElement("h2")
@@ -64,3 +62,18 @@ data.forEach(restaurant => {
         createPromo(restaurant)
     }
 });
+
+
+
+const checkbox = document.querySelectorAll('.checkbox')
+
+checkbox.forEach(check => {
+    check.addEventListener('change', (event) => {
+        const newData = data.filter(restaurant => {
+            return restaurant.filter.includes(event.target.value)
+        })
+        newData.forEach(restaurant => createRestaurantsArticles(restaurant))
+    })
+})
+
+

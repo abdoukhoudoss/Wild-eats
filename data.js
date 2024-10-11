@@ -279,7 +279,7 @@ export const data = [
             "Dimanche - 12h 14h / 19h 22h30"
         ],
         "filter": [
-            "Fast-food",
+            "fast-food",
             "Américaine"
         ],
         "url": "https://www.burgernco.fr/st-aubin-toulouse",
