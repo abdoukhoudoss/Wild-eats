@@ -16,7 +16,7 @@
         ],
         "filter": [
             "Fruit de mer",
-            "Europeenne"
+            "Europeen"
         ],
         "url": "https://le-bistrot-du-port-toulouse.eatbu.com/?lang=fr",
         "delivery": [
@@ -41,7 +41,7 @@
             "Dimanche - Fermé"
         ],
         "filter": [
-            "Europeenne"
+            "Europeen"
         ],
         "url": "https://feel-real-good-toulouse.fr/fr/services",
         "delivery": [
@@ -67,7 +67,7 @@
         ],
         "filter": [
             "Fruit de mer",
-            "Asiatique",
+            "Asiatique"
             
         ],
         "url": "https://haozai.fr/index.html",
@@ -77,7 +77,7 @@
         ],
         "discount":true
     },
-    // Restaurant 4 : Officina Gusto
+    // Restaurant 4 : Officina Gusto //
     {
         "name": "Officina Gusto",
         "price": "€€",
@@ -94,7 +94,7 @@
         ],
         "filter": [
             "Pizza",
-            "Italienne"
+            "Italien"
         ],
         "url": "https://www.officinagusto.fr/menus-carte/",
         "delivery": [
@@ -120,7 +120,7 @@
         ],
         "filter": [
             "Gastronomique",
-            "Europeenne"
+            "Europeen"
         ],
         "url": "https://hedone-restaurant.fr/",
         "delivery": [
@@ -172,7 +172,7 @@
             "Dimanche - Fermé"
         ],
         "filter": [
-            "Africaine",
+            "Africain",
             "Halal"
         ],
         "url": "https://restaurantksar.fr/fr/services",
@@ -199,7 +199,7 @@
         ],
         "filter": [
             "Gastronomique",
-            "Italienne",
+            "Italien",
             "Pizza"
         ],
         "url": "https://don-vincenzo-restaurant-toulouse.eatbu.com/?lang=fr",
@@ -226,7 +226,7 @@
             "Dimanche - Fermé"
         ],
         "filter": [
-            "Europeenne"
+            "Europeen"
         ],
         "url": "https://www.cafeauthie.com/notre-carte/",
         "delivery": [
@@ -280,7 +280,7 @@
         ],
         "filter": [
             "Fast-food",
-            "Américaine"
+            "Americain"
         ],
         "url": "https://www.burgernco.fr/st-aubin-toulouse",
         "delivery": [
@@ -333,9 +333,9 @@
             "Dimanche - 11h30 14h"
         ],
         "filter": [
-            "Europeenne",
+            "Europeen",
             "Gastronomique"
-        
+    
         ],
         "url": "https://www.restaurant-lacouleurdurenard.fr/cartes/",
         "delivery": [
@@ -387,8 +387,8 @@
             "Dimanche - 10h30 15h"
         ],
         "filter": [
-            "Europeenne",
-            "Végétarienne"
+            "Europeen",
+            "Vegetarien"
         
         ],
         "url": "https://cafebrule.fr/menu",
@@ -414,7 +414,7 @@
             "Dimanche - 11h 14h30"
         ],
         "filter": [
-            "Africaine",
+            "Africain",
             "Fast-food"
         
         ],
