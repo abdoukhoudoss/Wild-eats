@@ -29,3 +29,24 @@ function createRestaurantsArticles (restaurant) {
     restaurantsSection.appendChild(article);
 }
 data.forEach(restaurant => createRestaurantsArticles(restaurant));
+
+function createPromo (restaurant) {
+    const backCarousel = document.createElement("img")
+    const H2carousel = document.createElement("h2")
+    const promoSection = document.querySelector(".promo-section")
+    const promoItems = document.createElement("div")
+
+    promoItems.classList.add("promo-items")
+    H2carousel.classList.add("h2-carousel")
+    backCarousel.classList.add("img-carousel")
+
+    backCarousel.src = restaurant.image
+    H2carousel.innerHTML = restaurant.name
+
+    promoItems.appendChild(backCarousel)
+    promoItems.appendChild(H2carousel)
+    promoSection.appendChild(promoItems)
+    
+
+}
+data.forEach(restaurant => createPromo(restaurant));
