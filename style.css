@@ -107,13 +107,14 @@ header {
 }
 
 section > ul {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   gap: 25px;
   margin-left: 10px;
   padding: 0;
   margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -160,11 +161,12 @@ footer {
 }
 
 .promo-section {
+  margin-top: 20px;
   display: flex;
   overflow-x: scroll;
   padding: 1rem 0;
   padding: 20px;
-  background-color: DAF0EE;
+  background-color: var(--grey-color);
   gap: 20px;
 }
 .promo-items {
@@ -176,15 +178,26 @@ footer {
   padding: 20px;
   position: relative;
   display: flex;
-  height: 300px;
+  height: 280px;
   width: 300px;
+  justify-content: center;
+  align-items:baseline;
+ 
+  
 }
 .h2-carousel {
   position: absolute;
   margin-top: 10px;
   margin-left: 10px;
-  background-color: var(--grey-color);
+  background-color: rgba(50, 50, 50, 0.7);
+  border-radius: 10px;
+  margin-left: -110px;
+  color: white;
 }
 .img-carousel {
   object-fit: cover;
+  width: 280px;
+  height: 230px;
+  border-radius: 10px;
+  
 }

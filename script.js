@@ -64,4 +64,8 @@ function createPromo (restaurant) {
     
 
 }
-data.forEach(restaurant => createPromo(restaurant));
+data.forEach(restaurant => {
+    if (restaurant.discount) {
+        createPromo(restaurant)
+    }
+});
