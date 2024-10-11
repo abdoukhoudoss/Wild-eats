@@ -17,6 +17,7 @@ sortButton[0].addEventListener('click', (event) => {
     modalFilter.classList.remove('active');
 })
 
+
 function createRestaurantsArticles (restaurant) {
     const restaurantsSection = document.querySelector(".restaurants-section");
     const article = document.createElement("article");
@@ -38,7 +39,6 @@ function createRestaurantsArticles (restaurant) {
     restaurantsSection.appendChild(article);
 }
 
-data.forEach(restaurant => createRestaurantsArticles(restaurant));
 
 function createPromo (restaurant) {
     const backCarousel = document.createElement("img")
@@ -59,8 +59,11 @@ function createPromo (restaurant) {
     
 
 }
+
+
 data.forEach(restaurant => {
     if (restaurant.discount) {
         createPromo(restaurant)
     }
 });
+
