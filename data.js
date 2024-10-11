@@ -145,8 +145,8 @@ export const data = [
             "Dimanche - Fermé"
         ],
         "filter": [
-            "Gastronomique",
-            "Asiatique"
+            "gastronomique",
+            "asiatique"
         ],
         "url": "https://www.chezmoi.fr/carte-emporter.php",
         "delivery": [
@@ -172,8 +172,8 @@ export const data = [
             "Dimanche - Fermé"
         ],
         "filter": [
-            "Africain",
-            "Halal"
+            "africain",
+            "halal"
         ],
         "url": "https://restaurantksar.fr/fr/services",
         "delivery": [
@@ -198,9 +198,9 @@ export const data = [
             "Dimanche - Fermé"
         ],
         "filter": [
-            "Gastronomique",
-            "Italien",
-            "Pizza"
+            "gastronomique",
+            "italien",
+            "pizza"
         ],
         "url": "https://don-vincenzo-restaurant-toulouse.eatbu.com/?lang=fr",
         "delivery": [

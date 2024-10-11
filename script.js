@@ -67,7 +67,6 @@ data.forEach(restaurant => {
 });
 
 
-
 const checkbox = document.querySelectorAll('.checkbox')
 
 checkbox.forEach(check => {
@@ -76,6 +75,7 @@ checkbox.forEach(check => {
             return restaurant.filter.includes(event.target.value)
         })
         newData.forEach(restaurant => createRestaurantsArticles(restaurant))
+        console.log(newData)
     })
 })
 
