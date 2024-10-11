@@ -121,10 +121,15 @@ footer {
     border: 0.5px solid black;
     border-radius: 10px;
     text-align: center;
+    
 }
 
 .restaurants-article {
     width: 90vw;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #3b413c;
+    border-radius: 10px;
 }
 
 .restaurants-section {
@@ -134,4 +139,5 @@ footer {
     gap: 20px;
     padding-top: 40px;
     padding-bottom: 40px;
+    
 }
