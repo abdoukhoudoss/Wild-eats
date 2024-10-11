@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+body {
+    z-index: 0;
+    background-color: #DAF0EE;
+}
+
 header {
   width: 100vw;
   height: 150px;
@@ -39,15 +44,15 @@ header {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   background-color: var(--secondary-color);
   color: white;
   width: 70%;
-  height: 200px;
+  height: 220px;
   border-radius: 10px;
   margin-left: 10px;
   padding-left: 10px;
   padding-top:10px;
+  z-index: 1;
 }
 
 .active2 {
@@ -64,6 +69,7 @@ header {
   margin-left: 105px;
   padding-left: 10px;
   padding-top:10px;
+  z-index: 1;
 }
 
 .filter-button {
@@ -159,4 +165,10 @@ footer {
     padding-top: 40px;
     padding-bottom: 40px;
     
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
 }
