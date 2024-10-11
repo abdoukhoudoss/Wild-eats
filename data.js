@@ -156,7 +156,7 @@ export const data = [
         ],
         "discount":true
     },
-    // Reastaurant 7 : Le Ksar
+    // Restaurant 7 : Le Ksar
     {
         "name": "Le Ksar",
         "price": "€€",
