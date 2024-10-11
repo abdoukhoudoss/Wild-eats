@@ -1,5 +1,5 @@
 [
-    // Restaurant 1
+    // Restaurant 1 : Bistrot du Port
     {
         "name": "Bistrot du Port",
         "price": "€€",
@@ -25,7 +25,7 @@
         ],
         "discount": true
     },
-    // Restaurant 2
+    // Restaurant 2 : Feel Real Good
     {
         "name": "Feel Real Good",
         "price": "€€€",
@@ -50,7 +50,7 @@
         ],
         "discount":false
     },
-    // Restaurant 3
+    // Restaurant 3 : Hao zai
     {
         "name": "Hao zai",
         "price": "€",
@@ -67,15 +67,17 @@
         ],
         "filter": [
             "Fruit de mer",
-            "Asiatique"
+            "Asiatique",
+            
         ],
         "url": "https://haozai.fr/index.html",
         "delivery": [
-            "Emporter"
+            "Emporter",
+            "Click & Collect"
         ],
-        "discount":false
+        "discount":true
     },
-    // Restaurant 4
+    // Restaurant 4 : Officina Gusto
     {
         "name": "Officina Gusto",
         "price": "€€",
@@ -101,7 +103,7 @@
         ],
         "discount":false
     },   
-    // Restaurant 5
+    // Restaurant 5 : Hedone
     {
         "name": "Hedone",
         "price": "€€",
@@ -120,14 +122,14 @@
             "Gastronomique",
             "Europeenne"
         ],
-        "url": "https://www.officinagusto.fr/menus-carte/",
+        "url": "https://hedone-restaurant.fr/",
         "delivery": [
             "Emporter",
             "Livraison"
         ],
         "discount":false
     },
-    // Restaurant 6
+    // Restaurant 6 : Chez Moï
     {
         "name": "Chez Moï",
         "price": "€€€",
@@ -154,7 +156,7 @@
         ],
         "discount":true
     },
-    // Reastaurant 7
+    // Reastaurant 7 : Le Ksar
     {
         "name": "Le Ksar",
         "price": "€€",
@@ -180,11 +182,11 @@
         ],
         "discount":false
     },
-    // Restaurant 8
+    // Restaurant 8 : Don Vicenzo
     {
         "name": "Don Vicenzo",
         "price": "€€€",
-        "rating": "4",
+        "rating": "5",
         "image": "./image/ksar.jpeg",
         "openingHours": [
             "Lundi - 11h 14h30 / 18h30 23h30",
@@ -197,9 +199,10 @@
         ],
         "filter": [
             "Gastronomique",
-            "Italienne"
+            "Italienne",
+            "Pizza"
         ],
-        "url": "https://restaurantksar.fr/fr/services",
+        "url": "https://don-vincenzo-restaurant-toulouse.eatbu.com/?lang=fr",
         "delivery": [
             "Emporter",
             "Livraison",
@@ -207,5 +210,222 @@
         ],
         "discount":false
     },
+    // Restaurant 9 : Café Authié
+    {
+        "name": "Café Authié",
+        "price": "€€€",
+        "rating": "4",
+        "image": "./image/cafe-authie.jpg",
+        "openingHours": [
+            "Lundi - 11h 14h30 / 18h30 23h30",
+            "Mardi - 11h 14h30 / 18h30 23h30",
+            "Mercredi -  11h 14h30 / 18h30 23h30",
+            "Jeudi - 11h 14h30 / 18h30 23h30",
+            "Vendredi -  11h 14h30 / 18h30 23h30",
+            "Samedi -  11h 14h30 / 18h30 23h30",
+            "Dimanche - Fermé"
+        ],
+        "filter": [
+            "Europeenne"
+        ],
+        "url": "https://www.cafeauthie.com/notre-carte/",
+        "delivery": [
+            "Emporter",
+            "Livraison",
+        
+        ],
+        "discount":true
+    },
+    // Restaurant 10 : Le Yeti
+    {
+        "name": "Le Yeti",
+        "price": "€€",
+        "rating": "4",
+        "image": "./image/yeti.jpg",
+        "openingHours": [
+            "Lundi - Fermé",
+            "Mardi - 10h 23h",
+            "Mercredi -  10h 23h",
+            "Jeudi - 10h 23h",
+            "Vendredi -  10h 23h",
+            "Samedi -  10h 23h",
+            "Dimanche - Fermé"
+        ],
+        "filter": [
+            "Asiatique",
+            "Gastronomique"
+        ],
+        "url": "https://www.restoyeti.com/?lang=fr#menu",
+        "delivery": [
+            "Emporter",
+            "Livraison",
+    
+        ],
+        "discount":false
+    },
+    // Restaurant 11 : Burgernco
+    {
+        "name": "Burgernco",
+        "price": "€€",
+        "rating": "5",
+        "image": "./image/burger-n-co.jpg",
+        "openingHours": [
+            "Lundi - Fermé",
+            "Mardi - 12h 14h / 19h 22h30",
+            "Mercredi - 12h 14h / 19h 22h30",
+            "Jeudi - 12h 14h / 19h 22h30",
+            "Vendredi - 12h 14h / 19h 22h30",
+            "Samedi - 12h 14h / 19h 22h30",
+            "Dimanche - 12h 14h / 19h 22h30"
+        ],
+        "filter": [
+            "Fast-food",
+            "Américaine"
+        ],
+        "url": "https://www.burgernco.fr/st-aubin-toulouse",
+        "delivery": [
+            "Livraison",
+            "Emporter",
+            "Click & Collect"
+        ],
+        "discount":true
+    },
+    // Restaurant 12 : Le Bangalore
+    {
+        "name": "Le Bangalore",
+        "price": "€€",
+        "rating": "4",
+        "image": "./image/bangalore.jpg",
+        "openingHours": [
+            "Lundi - Fermé",
+            "Mardi - 12h 14h / 18h30 23h",
+            "Mercredi - 12h 14h / 18h30 23h",
+            "Jeudi - 12h 14h / 18h30 23h",
+            "Vendredi - 12h 14h / 18h30 23h30",
+            "Samedi - 12h 14h / 18h30 23h30",
+            "Dimanche - 12h 14h / 18h30 23h"
+        ],
+        "filter": [
+            "Fast-food",
+            "Asiatique",
+            "Poisson"
+        ],
+        "url": "https://www.restaurant-le-bangalore-toulouse.fr/la-carte-le-bangalore-restaurant-toulouse",
+        "delivery": [
+            "Livraison",
+            "Emporter"
+        ],
+        "discount":false
+    },
+    // Restaurant 13 : La Couleur du Renard 
+    {
+        "name": "La Couleur du Renard",
+        "price": "€€€",
+        "rating": "5",
+        "image": "./image/couleur-du-renard.jpg",
+        "openingHours": [
+            "Lundi - Fermé",
+            "Mardi - 12h 14h",
+            "Mercredi - 12h 14h / 19h45 21h15",
+            "Jeudi - 12h 14h / 19h45 21h15",
+            "Vendredi - 12h 14h / 19h45 21h15",
+            "Samedi - 19h45 21h15",
+            "Dimanche - 11h30 14h"
+        ],
+        "filter": [
+            "Europeenne",
+            "Gastronomique"
+        
+        ],
+        "url": "https://www.restaurant-lacouleurdurenard.fr/cartes/",
+        "delivery": [
+            "Click & Collect",
+            "Emporter"
+        ],
+        "discount":false
+    },
+    // Restaurant 14 : O'sasuke
+    {
+        "name": "O'sasuke",
+        "price": "€€",
+        "rating": "4",
+        "image": "./image/osasuke.jpeg",
+        "openingHours": [
+            "Lundi - 11h30 15h / 18h30 02h",
+            "Mardi - 11h30 15h / 18h30 02h",
+            "Mercredi - 11h30 15h / 18h30 02h",
+            "Jeudi - 11h30 15h / 18h30 02h",
+            "Vendredi - 18h30 02h",
+            "Samedi - 18h30 03h",
+            "Dimanche - 18h30 02h"
+        ],
+        "filter": [
+            "Asiatique",
+            "Fast-food"
+        ],
+        "url": "https://osasuke.fr/menu/",
+        "delivery": [
+            "Click & Collect",
+            "Emporter",
+            "Livraison"
+        ],
+        "discount":true
+    },
+    // Restaurant 15 : Café Brulé
+    {
+        "name": "Café Brulé",
+        "price": "€€",
+        "rating": "4",
+        "image": "./image/cafe-brule.png",
+        "openingHours": [
+            "Lundi - Fermé",
+            "Mardi - Fermé",
+            "Mercredi - 09h 18h",
+            "Jeudi - 09h 18h",
+            "Vendredi - 09h 18h",
+            "Samedi - 10h30 18h",
+            "Dimanche - 10h30 15h"
+        ],
+        "filter": [
+            "Europeenne",
+            "Végétarienne"
+        
+        ],
+        "url": "https://cafebrule.fr/menu",
+        "delivery": [
+            "Click & Collect",
+            "Emporter"
+        ],
+        "discount":true
+    },
+    // Restaurant 16 : Abyssinia
+    {
+        "name": "Abyssinia",
+        "price": "€€",
+        "rating": "4",
+        "image": "./image/abyssinia.jpg",
+        "openingHours": [
+            "Lundi - Fermé",
+            "Mardi - 12h 14h30 / 19h 22h30",
+            "Mercredi - 12h 14h30 / 19h 22h30",
+            "Jeudi - 12h 14h30 / 19h 22h30",
+            "Vendredi - 12h 14h30 / 19h 22h30",
+            "Samedi - 12h 14h30 / 19h 22h30",
+            "Dimanche - 11h 14h30"
+        ],
+        "filter": [
+            "Africaine",
+            "Fast-food"
+        
+        ],
+        "url": "https://restaurant-ethiopien-toulouse.eatbu.com/?lang=fr#menu",
+        "delivery": [
+            "Click & Collect",
+            "Emporter",
+            "Livraison"
+        ],
+        "discount":false
+    },
 
+    
 ]
