@@ -11,14 +11,8 @@ filterButton.addEventListener('click', (event) => {
     modalSort[0].classList.remove('active2');
 })
 
-console.log('filterButton', filterButton)
-console.log('sortButton', sortButton)
-console.log('modalFilter', modalFilter)
-console.log('modalSort', modalSort)
-
 sortButton[0].addEventListener('click', (event) => {
     event.preventDefault();
-    console.log('test')
     modalSort[0].classList.toggle("active2");
     modalFilter.classList.remove('active');
 })
