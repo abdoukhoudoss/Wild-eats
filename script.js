@@ -2,18 +2,25 @@ import { data } from './data.js'
 
 const filterButton = document.querySelector(".filter-button");
 const modalFilter = document.querySelector(".modal-filter");
+const sortButton = document.querySelectorAll(".sort-button");
+const modalSort = document.querySelectorAll(".modal-sort");
 
 filterButton.addEventListener('click', (event) => {
     event.preventDefault();
     modalFilter.classList.toggle("active");
+    modalSort[0].classList.remove('active2');
 })
 
-const sortButton = document.querySelectorAll(".sort-button");
-const modalSort = document.querySelectorAll(".modal-sort");
+console.log('filterButton', filterButton)
+console.log('sortButton', sortButton)
+console.log('modalFilter', modalFilter)
+console.log('modalSort', modalSort)
 
-sortButton.addEventListener('click', (event) => {
+sortButton[0].addEventListener('click', (event) => {
     event.preventDefault();
-    modalSort.classList.toggle("active");
+    console.log('test')
+    modalSort[0].classList.toggle("active2");
+    modalFilter.classList.remove('active');
 })
 
 function createRestaurantsArticles (restaurant) {
