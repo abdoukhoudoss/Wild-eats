@@ -15,8 +15,8 @@ export const data = [
             "Dimanche - 10h 18h"
         ],
         "filter": [
-            "Fruit de mer",
-            "Europeen"
+            "fruit de mer",
+            "europeen"
         ],
         "url": "https://le-bistrot-du-port-toulouse.eatbu.com/?lang=fr",
         "delivery": [
@@ -41,7 +41,7 @@ export const data = [
             "Dimanche - Fermé"
         ],
         "filter": [
-            "Europeen"
+            "europeen"
         ],
         "url": "https://feel-real-good-toulouse.fr/fr/services",
         "delivery": [
@@ -66,8 +66,8 @@ export const data = [
             "Dimanche - Fermé"
         ],
         "filter": [
-            "Fruit de mer",
-            "Asiatique"
+            "fruit de mer",
+            "asiatique"
             
         ],
         "url": "https://haozai.fr/index.html",
@@ -93,8 +93,8 @@ export const data = [
             "Dimanche - Fermé"
         ],
         "filter": [
-            "Pizza",
-            "Italien"
+            "pizza",
+            "italien"
         ],
         "url": "https://www.officinagusto.fr/menus-carte/",
         "delivery": [
@@ -119,8 +119,8 @@ export const data = [
             "Dimanche - Fermé"
         ],
         "filter": [
-            "Gastronomique",
-            "Europeen"
+            "gastronomique",
+            "europeen"
         ],
         "url": "https://hedone-restaurant.fr/",
         "delivery": [
@@ -145,8 +145,8 @@ export const data = [
             "Dimanche - Fermé"
         ],
         "filter": [
-            "Gastronomique",
-            "Asiatique"
+            "gastronomique",
+            "asiatique"
         ],
         "url": "https://www.chezmoi.fr/carte-emporter.php",
         "delivery": [
@@ -172,8 +172,8 @@ export const data = [
             "Dimanche - Fermé"
         ],
         "filter": [
-            "Africain",
-            "Halal"
+            "africain",
+            "halal"
         ],
         "url": "https://restaurantksar.fr/fr/services",
         "delivery": [
@@ -198,9 +198,9 @@ export const data = [
             "Dimanche - Fermé"
         ],
         "filter": [
-            "Gastronomique",
-            "Italien",
-            "Pizza"
+            "gastronomique",
+            "italien",
+            "pizza"
         ],
         "url": "https://don-vincenzo-restaurant-toulouse.eatbu.com/?lang=fr",
         "delivery": [
@@ -226,7 +226,7 @@ export const data = [
             "Dimanche - Fermé"
         ],
         "filter": [
-            "Europeen"
+            "europeen"
         ],
         "url": "https://www.cafeauthie.com/notre-carte/",
         "delivery": [
@@ -252,8 +252,8 @@ export const data = [
             "Dimanche - Fermé"
         ],
         "filter": [
-            "Asiatique",
-            "Gastronomique"
+            "asiatique",
+            "gastronomique"
         ],
         "url": "https://www.restoyeti.com/?lang=fr#menu",
         "delivery": [
@@ -279,8 +279,8 @@ export const data = [
             "Dimanche - 12h 14h / 19h 22h30"
         ],
         "filter": [
-            "Fast-food",
-            "Americain"
+            "fast-food",
+            "americain"
         ],
         "url": "https://www.burgernco.fr/st-aubin-toulouse",
         "delivery": [
@@ -306,9 +306,9 @@ export const data = [
             "Dimanche - 12h 14h / 18h30 23h"
         ],
         "filter": [
-            "Fast-food",
-            "Asiatique",
-            "Poisson"
+            "fast-food",
+            "asiatique",
+            "poisson"
         ],
         "url": "https://www.restaurant-le-bangalore-toulouse.fr/la-carte-le-bangalore-restaurant-toulouse",
         "delivery": [
@@ -333,8 +333,8 @@ export const data = [
             "Dimanche - 11h30 14h"
         ],
         "filter": [
-            "Europeen",
-            "Gastronomique"
+            "europeen",
+            "gastronomique"
     
         ],
         "url": "https://www.restaurant-lacouleurdurenard.fr/cartes/",
@@ -360,8 +360,8 @@ export const data = [
             "Dimanche - 18h30 02h"
         ],
         "filter": [
-            "Asiatique",
-            "Fast-food"
+            "asiatique",
+            "fast-food"
         ],
         "url": "https://osasuke.fr/menu/",
         "delivery": [
@@ -387,8 +387,8 @@ export const data = [
             "Dimanche - 10h30 15h"
         ],
         "filter": [
-            "Europeen",
-            "Vegetarien"
+            "europeen",
+            "vegetarien"
         
         ],
         "url": "https://cafebrule.fr/menu",
@@ -414,8 +414,8 @@ export const data = [
             "Dimanche - 11h 14h30"
         ],
         "filter": [
-            "Africain",
-            "Fast-food"
+            "africain",
+            "fast-food"
         
         ],
         "url": "https://restaurant-ethiopien-toulouse.eatbu.com/?lang=fr#menu",
@@ -426,6 +426,5 @@ export const data = [
         ],
         "discount":false
     },
-
-    
+   
 ]
