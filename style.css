@@ -34,6 +34,7 @@ header {
   display: none;
 }
 .active {
+  position: absolute;
   list-style-type: none;
   display: flex;
   flex-direction: column;
