@@ -17,7 +17,6 @@ sortButton[0].addEventListener('click', (event) => {
     modalFilter.classList.remove('active');
 })
 
-
 function createRestaurantsArticles (restaurant) {
     const restaurantsSection = document.querySelector(".restaurants-section");
     const article = document.createElement("article");
@@ -55,28 +54,34 @@ function createPromo (restaurant) {
     promoItems.appendChild(backCarousel)
     promoItems.appendChild(H2carousel)
     promoSection.appendChild(promoItems)
-    
-
 }
 
+function filterAndDisplayRestaurants() {
+    const selectedFilters = Array.from(checkbox).filter(check => check.checked).map(check => check.value);
+
+    restaurantsSection.innerHTML = ''; 
+
+    if (selectedFilters.length === 0) {
+        data.forEach(restaurant => createRestaurantsArticles(restaurant));
+    } else {
+        const filteredRestaurants = data.filter(restaurant => 
+            selectedFilters.some(filter => restaurant.filter.includes(filter))
+        );
+        filteredRestaurants.forEach(restaurant => createRestaurantsArticles(restaurant));
+    }
+}
+
+const checkbox = document.querySelectorAll('.checkbox')
+const restaurantsSection = document.querySelector(".restaurants-section");
+
+data.forEach(restaurant => createRestaurantsArticles(restaurant))
+
+checkbox.forEach(check => {
+    check.addEventListener('change', filterAndDisplayRestaurants);
+});
 
 data.forEach(restaurant => {
     if (restaurant.discount) {
         createPromo(restaurant)
     }
 });
-
-
-const checkbox = document.querySelectorAll('.checkbox')
-
-checkbox.forEach(check => {
-    check.addEventListener('change', (event) => {
-        const newData = data.filter(restaurant => {
-            return restaurant.filter.includes(event.target.value)
-        })
-        newData.forEach(restaurant => createRestaurantsArticles(restaurant))
-        console.log(newData)
-    })
-})
-
-
