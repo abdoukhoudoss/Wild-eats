@@ -17,7 +17,6 @@ sortButton[0].addEventListener('click', (event) => {
     modalFilter.classList.remove('active');
 })
 
-
 function createRestaurantsArticles (restaurant) {
     const restaurantsSection = document.querySelector(".restaurants-section");
     const article = document.createElement("article");
@@ -60,6 +59,7 @@ function createPromo (restaurant) {
 
 }
 
+data.forEach(restaurant => createRestaurantsArticles(restaurant))
 
 data.forEach(restaurant => {
     if (restaurant.discount) {
