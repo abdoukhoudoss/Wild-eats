@@ -64,3 +64,28 @@ data.forEach(restaurant => {
         createPromo(restaurant)
     }
 });
+
+
+
+
+
+
+console.log(document.querySelectorAll('input[name="h"]:checked'))
+
+// function filtrer() {
+    
+//     const checkboxes = document.querySelectorAll('input[name="h"]:checked');
+//     let fruitsSelectionnes = [];
+
+//     console.log(checkboxes)
+//     checkboxes.forEach((checkbox) => {
+//         fruitsSelectionnes.push(checkbox.value);
+//     });
+
+
+//     const resultatDiv = document.getElementById('resultat');
+
+    
+// }
+
+// data.forEach(restaurant => filtrer(restaurant));
