@@ -56,36 +56,32 @@ function createPromo(restaurant) {
 	promoSection.appendChild(promoItems);
 }
 
-data.forEach((restaurant) => createRestaurantsArticles(restaurant));
+function filterAndDisplayRestaurants() {
+    const selectedFilters = Array.from(checkbox).filter(check => check.checked).map(check => check.value);
+
+    restaurantsSection.innerHTML = ''; 
+
+    if (selectedFilters.length === 0) {
+        data.forEach(restaurant => createRestaurantsArticles(restaurant));
+    } else {
+        const filteredRestaurants = data.filter(restaurant => 
+            selectedFilters.some(filter => restaurant.filter.includes(filter))
+        );
+        filteredRestaurants.forEach(restaurant => createRestaurantsArticles(restaurant));
+    }
+}
+
+const checkbox = document.querySelectorAll('.checkbox')
+const restaurantsSection = document.querySelector(".restaurants-section");
+
+data.forEach(restaurant => createRestaurantsArticles(restaurant))
+
+checkbox.forEach(check => {
+    check.addEventListener('change', filterAndDisplayRestaurants);
+});
 
 data.forEach((restaurant) => {
 	if (restaurant.discount) {
 		createPromo(restaurant);
 	}
 });
-
-
-
-
-
-
-
-console.log(document.querySelectorAll('input[name="h"]:checked'))
-
-// function filtrer() {
-    
-//     const checkboxes = document.querySelectorAll('input[name="h"]:checked');
-//     let fruitsSelectionnes = [];
-
-//     console.log(checkboxes)
-//     checkboxes.forEach((checkbox) => {
-//         fruitsSelectionnes.push(checkbox.value);
-//     });
-
-
-//     const resultatDiv = document.getElementById('resultat');
-
-    
-// }
-
-// data.forEach(restaurant => filtrer(restaurant));
