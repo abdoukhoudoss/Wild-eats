@@ -26,20 +26,23 @@ function createRestaurantsArticles(restaurant) {
     const containerName = document.createElement("div");
 
     article.classList.add("restaurants-article");
-    article.classList.add("all-restaurants");
     imageElement.classList.add("image-restaurants-article");
     nameElement.classList.add("name-restaurants-article");
     containerName.classList.add("container-name-restaurants-article");
 
     imageElement.src = restaurant.image;
     nameElement.innerHTML = restaurant.name;
-    article.setAttribute("index", restaurant.index);
 
     containerName.appendChild(nameElement);
     article.appendChild(imageElement);
     article.appendChild(containerName);
     restaurantsSection.appendChild(article);
+
+    article.addEventListener('click', () => {
+        createModal(restaurant);
+    });
 }
+
 function createPromo(restaurant) {
     const backCarousel = document.createElement("img");
     const H2carousel = document.createElement("h2");
@@ -48,20 +51,22 @@ function createPromo(restaurant) {
 	const imgpromo = document.createElement("img");
 
     promoItems.classList.add("promo-items");
-    promoItems.classList.add("all-restaurants");
     H2carousel.classList.add("h2-carousel");
     backCarousel.classList.add("img-carousel");
 	imgpromo.classList.add("imgpromo");
 
     backCarousel.src = restaurant.image;
     H2carousel.innerHTML = restaurant.name;
-    promoItems.setAttribute("index", restaurant.index);
 	imgpromo.src = "./image/promo.png";
 
     promoItems.appendChild(backCarousel);
     promoItems.appendChild(H2carousel);
     promoSection.appendChild(promoItems);
 	promoItems.appendChild(imgpromo);
+
+    promoItems.addEventListener('click', () => {
+        createModal(restaurant);
+    });
 }
 
 function createModal(element){
@@ -172,7 +177,6 @@ function trie(ordre, element, array) {
 
 function filterAndDisplayRestaurants() {
     const selectedFilters = Array.from(checkbox).filter(check => check.checked).map(check => check.value);
-    
     let filteredRestaurants = data;
     
     if (selectedFilters.length === 0) {
@@ -227,12 +231,4 @@ data.forEach((restaurant) => {
     }
 });
 
-const allRestaurants = document.querySelectorAll('.all-restaurants');
 
-allRestaurants.forEach(restaurant =>{
-    restaurant.addEventListener('click', () => {
-        const index = restaurant.getAttribute('index')
-        createModal(data[index - 1])
-        
-    })
-})
