@@ -227,8 +227,106 @@ footer {
 	padding-right: 15px;
 }
 
-.divvv {
-	background: linear-gradient(to top, transparent, #9db5b2);
+.transparent-page {
+  background: linear-gradient(to top, transparent, #9db5b2);
+  position: relative;
+}
+
+.modal-page {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  background-color: var(--background-color);
+  border: 3px solid black;
+  border-radius: 15px;
+  height: auto;
+  align-items: center;
+  margin:5px;
+  z-index: 1;
+}
+
+.all-elements-modal{
+  width:90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:10px;
+  padding-bottom: 15px;
+}
+
+.modal-page-image {
+  width: 100%;
+  margin-top: 5%;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.modal-page-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.measure-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.measure-section>p{
+  font-size: 1.5rem;
+}
+
+
+.schedule-section{
+  display: flex;
+  width: 100%;
+  gap:70px;
+}
+
+.modal-schedule-image {
+  height:30px;
+  width: 30px;
+}
+
+.modal-page-list{
+  font-size: 1rem;
+  gap: 0px;
+}
+
+.delivery-section{
+  display: flex;
+  gap:60px;
+  width:100%;
+  align-items: center;
+}
+
+.modal-delivery-list{
+  display: flex;
+  flex-direction: column;
+  gap:0;
+}
+
+.truck {
+  width: 40px;
+  height: 40px;
+}
+
+.menu-section{
+  display: flex;
+  gap:70px;
+  width: 100%;
+  align-items: center;
+}
+
+.menu-logo {
+  width: 12%;
 }
 
 h3 {
