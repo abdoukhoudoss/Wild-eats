@@ -43,17 +43,21 @@ function createPromo(restaurant) {
     const H2carousel = document.createElement("h2");
     const promoSection = document.querySelector(".promo-section");
     const promoItems = document.createElement("div");
+	const imgpromo = document.createElement("img");
 
     promoItems.classList.add("promo-items");
     H2carousel.classList.add("h2-carousel");
     backCarousel.classList.add("img-carousel");
+	imgpromo.classList.add("imgpromo");
 
     backCarousel.src = restaurant.image;
     H2carousel.innerHTML = restaurant.name;
+	imgpromo.src = "./image/promo.png";
 
     promoItems.appendChild(backCarousel);
     promoItems.appendChild(H2carousel);
     promoSection.appendChild(promoItems);
+	promoItems.appendChild(imgpromo);
 }
 
 function trie(ordre, element, array) {
@@ -121,8 +125,8 @@ liSort.forEach(li => {
     });
 });
 
-checkbox.forEach(check => {
-    check.addEventListener('change', filterAndDisplayRestaurants);
+checkbox.forEach((check) => {
+	check.addEventListener("change", filterAndDisplayRestaurants);
 });
 
 
