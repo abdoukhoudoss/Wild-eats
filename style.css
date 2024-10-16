@@ -148,7 +148,7 @@ footer {
   border-radius: 10px;
   text-align: center;
   position: absolute;
-    color: white;
+  color: white;
   padding: 5px;
   margin-left: 5px;
   margin-bottom: 5px;
@@ -230,22 +230,28 @@ footer {
 .modal-page {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
+  top: 50px;
   background-color: var(--background-color);
   border: 3px solid black;
   border-radius: 15px;
-  width: 98%;
   height: auto;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5%;
-  margin-left: 1%;
+  margin:5px;
   z-index: 1;
 }
 
-.burgernco {
-  width: 90%;
+.all-elements-modal{
+  width:90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:10px;
+  padding-bottom: 15px;
+}
+
+.modal-page-image {
+  width: 100%;
   margin-top: 5%;
   border: 3px solid black;
   border-radius: 15px;
@@ -255,23 +261,67 @@ ul {
   list-style-type: none;
 }
 
-.modal-list {
+.modal-page-list {
   display: flex;
   flex-direction: column;
 }
-.schedule-section {
+
+.measure-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
-.schedule {
-  width: 10%;
+.measure-section>p{
+  font-size: 1.5rem;
+}
+
+
+.schedule-section{
+  display: flex;
+  width: 100%;
+  gap:70px;
+}
+
+.modal-schedule-image {
+  height:30px;
+  width: 30px;
+}
+
+.modal-page-list{
+  font-size: 1rem;
+  gap: 0px;
+}
+
+.delivery-section{
+  display: flex;
+  gap:60px;
+  width:100%;
+  align-items: center;
+}
+
+.modal-delivery-list{
+  display: flex;
+  flex-direction: column;
+  gap:0;
 }
 
 .truck {
-  width: 15%;
+  width: 40px;
+  height: 40px;
 }
 
-.logomenu {
-  width: 15%;
+.menu-section{
+  display: flex;
+  gap:70px;
+  width: 100%;
+  align-items: center;
+}
+
+.menulogo {
+  width: 12%;
 }
 
 h3 {
@@ -280,5 +330,3 @@ h3 {
   display: flex;
   justify-content: center;
 }
-
-
