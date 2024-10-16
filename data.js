@@ -23,7 +23,9 @@ export const data = [
             "Livraison",
             "Emporter"
         ],
-        "discount": true
+        "discount": true,
+        "distance": 700,
+        "index": 1
     },
     // Restaurant 2 : Feel Real Good
     {
@@ -48,7 +50,9 @@ export const data = [
             "Livraison",
             "Emporter"
         ],
-        "discount":false
+        "discount":false,
+        "distance": 1000,
+        "index": 2
     },
     // Restaurant 3 : Hao zai
     {
@@ -75,7 +79,9 @@ export const data = [
             "Emporter",
             "Click & Collect"
         ],
-        "discount":true
+        "discount":true,
+        "distance": 900,
+        "index": 3
     },
     // Restaurant 4 : Officina Gusto //
     {
@@ -101,7 +107,9 @@ export const data = [
             "Emporter",
             "Livraison"
         ],
-        "discount":false
+        "discount":false,
+        "distance": 1700,
+        "index": 4
     },   
     // Restaurant 5 : Hedone
     {
@@ -127,7 +135,9 @@ export const data = [
             "Emporter",
             "Livraison"
         ],
-        "discount":false
+        "discount":false,
+        "distance": 850,
+        "index": 5
     },
     // Restaurant 6 : Chez Moï
     {
@@ -154,7 +164,9 @@ export const data = [
             "Livraison",
             "Click & Collect"
         ],
-        "discount":true
+        "discount":true,
+        "distance": 600,
+        "index": 6
     },
     // Reastaurant 7 : Le Ksar
     {
@@ -180,7 +192,9 @@ export const data = [
             "Emporter",
             "Livraison"
         ],
-        "discount":false
+        "discount":false,
+        "distance": 1200,
+        "index": 7
     },
     // Restaurant 8 : Don Vicenzo
     {
@@ -208,7 +222,9 @@ export const data = [
             "Livraison",
             "Click & Collect"
         ],
-        "discount":false
+        "discount":false,
+        "distance": 600,
+        "index": 8
     },
     // Restaurant 9 : Café Authié
     {
@@ -234,7 +250,9 @@ export const data = [
             "Livraison",
         
         ],
-        "discount":true
+        "discount":true,
+        "distance": 1000,
+        "index": 9
     },
     // Restaurant 10 : Le Yeti
     {
@@ -261,7 +279,9 @@ export const data = [
             "Livraison",
     
         ],
-        "discount":false
+        "discount":false,
+        "distance": 1500,
+        "index": 10
     },
     // Restaurant 11 : Burgernco
     {
@@ -288,7 +308,9 @@ export const data = [
             "Emporter",
             "Click & Collect"
         ],
-        "discount":true
+        "discount":true,
+        "distance": 850,
+        "index": 11
     },
     // Restaurant 12 : Le Bangalore
     {
@@ -315,7 +337,9 @@ export const data = [
             "Livraison",
             "Emporter"
         ],
-        "discount":false
+        "discount":false,
+        "distance": 1600,
+        "index": 12
     },
     // Restaurant 13 : La Couleur du Renard 
     {
@@ -342,7 +366,9 @@ export const data = [
             "Click & Collect",
             "Emporter"
         ],
-        "discount":false
+        "discount":false,
+        "distance": 800,
+        "index": 13
     },
     // Restaurant 14 : O'sasuke
     {
@@ -369,7 +395,9 @@ export const data = [
             "Emporter",
             "Livraison"
         ],
-        "discount":true
+        "discount":true,
+        "distance": 1300,
+        "index": 14
     },
     // Restaurant 15 : Café Brulé
     {
@@ -396,7 +424,9 @@ export const data = [
             "Click & Collect",
             "Emporter"
         ],
-        "discount":true
+        "discount":true,
+        "distance": 1800,
+        "index": 15
     },
     // Restaurant 16 : Abyssinia
     {
@@ -424,7 +454,9 @@ export const data = [
             "Emporter",
             "Livraison"
         ],
-        "discount":false
+        "discount":false,
+        "distance": 1600,
+        "index": 16
     },
    
 ]
