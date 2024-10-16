@@ -26,14 +26,12 @@ function createRestaurantsArticles(restaurant) {
     const containerName = document.createElement("div");
 
     article.classList.add("restaurants-article");
-    article.classList.add("all-restaurants");
     imageElement.classList.add("image-restaurants-article");
     nameElement.classList.add("name-restaurants-article");
     containerName.classList.add("container-name-restaurants-article");
 
     imageElement.src = restaurant.image;
     nameElement.innerHTML = restaurant.name;
-    article.setAttribute("index", restaurant.index);
 
     containerName.appendChild(nameElement);
     article.appendChild(imageElement);
@@ -53,14 +51,12 @@ function createPromo(restaurant) {
 	const imgpromo = document.createElement("img");
 
     promoItems.classList.add("promo-items");
-    promoItems.classList.add("all-restaurants");
     H2carousel.classList.add("h2-carousel");
     backCarousel.classList.add("img-carousel");
 	imgpromo.classList.add("imgpromo");
 
     backCarousel.src = restaurant.image;
     H2carousel.innerHTML = restaurant.name;
-    promoItems.setAttribute("index", restaurant.index);
 	imgpromo.src = "./image/promo.png";
 
     promoItems.appendChild(backCarousel);
@@ -181,7 +177,6 @@ function trie(ordre, element, array) {
 
 function filterAndDisplayRestaurants() {
     const selectedFilters = Array.from(checkbox).filter(check => check.checked).map(check => check.value);
-    
     let filteredRestaurants = data;
     
     if (selectedFilters.length === 0) {
