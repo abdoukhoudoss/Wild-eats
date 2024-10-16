@@ -135,4 +135,3 @@ data.forEach((restaurant) => {
         createPromo(restaurant);
     }
 });
-
