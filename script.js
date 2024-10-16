@@ -43,41 +43,49 @@ function createPromo(restaurant) {
 	const H2carousel = document.createElement("h2");
 	const promoSection = document.querySelector(".promo-section");
 	const promoItems = document.createElement("div");
+	const imgpromo = document.createElement("img");
 
 	promoItems.classList.add("promo-items");
 	H2carousel.classList.add("h2-carousel");
 	backCarousel.classList.add("img-carousel");
+	imgpromo.classList.add("imgpromo");
 
 	backCarousel.src = restaurant.image;
 	H2carousel.innerHTML = restaurant.name;
+	imgpromo.src = "./image/promo.png";
 
 	promoItems.appendChild(backCarousel);
 	promoItems.appendChild(H2carousel);
 	promoSection.appendChild(promoItems);
+	promoItems.appendChild(imgpromo);
 }
 
 function filterAndDisplayRestaurants() {
-    const selectedFilters = Array.from(checkbox).filter(check => check.checked).map(check => check.value);
+	const selectedFilters = Array.from(checkbox)
+		.filter((check) => check.checked)
+		.map((check) => check.value);
 
-    restaurantsSection.innerHTML = ''; 
+	restaurantsSection.innerHTML = "";
 
-    if (selectedFilters.length === 0) {
-        data.forEach(restaurant => createRestaurantsArticles(restaurant));
-    } else {
-        const filteredRestaurants = data.filter(restaurant => 
-            selectedFilters.some(filter => restaurant.filter.includes(filter))
-        );
-        filteredRestaurants.forEach(restaurant => createRestaurantsArticles(restaurant));
-    }
+	if (selectedFilters.length === 0) {
+		data.forEach((restaurant) => createRestaurantsArticles(restaurant));
+	} else {
+		const filteredRestaurants = data.filter((restaurant) =>
+			selectedFilters.some((filter) => restaurant.filter.includes(filter)),
+		);
+		filteredRestaurants.forEach((restaurant) =>
+			createRestaurantsArticles(restaurant),
+		);
+	}
 }
 
-const checkbox = document.querySelectorAll('.checkbox')
+const checkbox = document.querySelectorAll(".checkbox");
 const restaurantsSection = document.querySelector(".restaurants-section");
 
-data.forEach(restaurant => createRestaurantsArticles(restaurant))
+data.forEach((restaurant) => createRestaurantsArticles(restaurant));
 
-checkbox.forEach(check => {
-    check.addEventListener('change', filterAndDisplayRestaurants);
+checkbox.forEach((check) => {
+	check.addEventListener("change", filterAndDisplayRestaurants);
 });
 
 data.forEach((restaurant) => {
