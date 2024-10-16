@@ -39,7 +39,12 @@ function createRestaurantsArticles(restaurant) {
     article.appendChild(imageElement);
     article.appendChild(containerName);
     restaurantsSection.appendChild(article);
+
+    article.addEventListener('click', () => {
+        createModal(restaurant);
+    });
 }
+
 function createPromo(restaurant) {
     const backCarousel = document.createElement("img");
     const H2carousel = document.createElement("h2");
@@ -62,6 +67,10 @@ function createPromo(restaurant) {
     promoItems.appendChild(H2carousel);
     promoSection.appendChild(promoItems);
 	promoItems.appendChild(imgpromo);
+
+    promoItems.addEventListener('click', () => {
+        createModal(restaurant);
+    });
 }
 
 function createModal(element){
@@ -227,12 +236,4 @@ data.forEach((restaurant) => {
     }
 });
 
-const allRestaurants = document.querySelectorAll('.all-restaurants');
 
-allRestaurants.forEach(restaurant =>{
-    restaurant.addEventListener('click', () => {
-        const index = restaurant.getAttribute('index')
-        createModal(data[index - 1])
-        
-    })
-})
