@@ -217,6 +217,54 @@ footer {
   padding-right: 15px;
 }
 
-.divvv {
+.transparent-page {
   background: linear-gradient(to top, transparent, #9db5b2);
+  position: relative;
+}
+
+.modal-page {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: var(--background-color);
+  border: 3px solid black;
+  border-radius: 15px;
+  width: 98%;
+  height: auto;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
+  margin-left: 1%;
+  z-index: 1;
+}
+
+.burgernco {
+  width: 90%;
+  margin-top: 5%;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.modal-list {
+  display: flex;
+  flex-direction: column;
+}
+.schedule-section {
+}
+
+.schedule {
+  width: 10%;
+}
+
+.truck {
+  width: 15%;
+}
+
+.logomenu {
+  width: 15%;
 }
