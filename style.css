@@ -333,3 +333,14 @@ h3 {
 	color: #3b413c;
 	text-align: center;
 }
+
+.closed-button {
+	width: 40px;
+	cursor: pointer;
+}
+.container-closed {
+	display: flex;
+	justify-content:flex-end;
+	width: 100%;
+	margin-top: 15px;
+}

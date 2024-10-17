@@ -89,7 +89,9 @@ function createModal(element){
     const menuSection = document.createElement("section");
     const menuLogo = document.createElement("img");
     const menuLink = document.createElement("a");
-    
+    const containerClosed = document.createElement("section");
+	const closedButton	= document.createElement("img");
+
     modalPage.classList.add("modal-page");
     allElement.classList.add("all-elements-modal");
     photoSection.classList.add("photo-section");
@@ -107,6 +109,8 @@ function createModal(element){
     menuSection.classList.add("menu-section");
     menuLogo.classList.add("menu-logo");
     menuLink.classList.add("modal-menu-link");
+	closedButton.classList.add("closed-button");
+	containerClosed.classList.add("container-closed");
     
     pageImage.src = element.image;
     restaurantTitle.innerHTML = element.name;
@@ -116,7 +120,12 @@ function createModal(element){
     truck.src = "./image/truck.png";
     menuLogo.src = "./image/logomenu.png";
     menuLink.innerHTML = element.url;
-    
+    closedButton.src = "./image/closedbutton.png";
+
+	closedButton.addEventListener("click", () => {
+		transparentPage.removeChild(transparentPage.firstChild);
+	})
+
     photoSection.appendChild(pageImage);
     photoSection.appendChild(restaurantTitle);
     measureSection.appendChild(price);
@@ -143,7 +152,9 @@ function createModal(element){
     deliverySection.appendChild(deliveryList);
     menuSection.appendChild(menuLogo);
     menuSection.appendChild(menuLink);
-
+    
+	containerClosed.appendChild(closedButton);
+	allElement.appendChild(containerClosed);
     allElement.appendChild(photoSection);
     allElement.appendChild(measureSection);
     allElement.appendChild(scheduleSection);
