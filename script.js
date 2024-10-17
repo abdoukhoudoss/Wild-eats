@@ -72,73 +72,82 @@ function createPromo(restaurant) {
 function createModal(element) {
 	const transparentPage = document.querySelector(".transparent-page");
 
-	const modalPage = document.createElement("article");
-	const allElement = document.createElement("section");
-	const photoSection = document.createElement("section");
-	const pageImage = document.createElement("img");
-	const restaurantTitle = document.createElement("h2");
-	const measureSection = document.createElement("section");
-	const price = document.createElement("p");
-	const rating = document.createElement("img");
-	const scheduleSection = document.createElement("section");
-	const scheduleImage = document.createElement("img");
-	const pageList = document.createElement("ul");
-	const deliverySection = document.createElement("section");
-	const truck = document.createElement("img");
-	const deliveryList = document.createElement("ul");
-	const menuSection = document.createElement("section");
-	const menuLogo = document.createElement("img");
-	const menuLink = document.createElement("a");
+    const modalPage = document.createElement("article");
+    const allElement = document.createElement("section");
+    const photoSection = document.createElement("section");
+    const pageImage = document.createElement("img");
+    const restaurantTitle = document.createElement("h2");
+    const measureSection = document.createElement("section");
+    const price = document.createElement("p");
+    const rating = document.createElement("img");
+    const scheduleSection = document.createElement("section");
+    const scheduleImage = document.createElement("img");
+    const pageList = document.createElement("ul");
+    const deliverySection = document.createElement("section");
+    const truck = document.createElement("img");
+    const deliveryList = document.createElement("ul");
+    const menuSection = document.createElement("section");
+    const menuLogo = document.createElement("img");
+    const menuLink = document.createElement("a");
+    const containerClosed = document.createElement("section");
+	const closedButton	= document.createElement("img");
 
-	modalPage.classList.add("modal-page");
-	allElement.classList.add("all-elements-modal");
-	photoSection.classList.add("photo-section");
-	pageImage.classList.add("modal-page-image");
-	restaurantTitle.classList.add("restaurant-title");
-	measureSection.classList.add("measure-section");
-	price.classList.add("price");
-	rating.classList.add("rating");
-	scheduleSection.classList.add("schedule-section");
-	scheduleImage.classList.add("modal-schedule-image");
-	pageList.classList.add("modal-page-list");
-	deliverySection.classList.add("delivery-section");
-	truck.classList.add("truck");
-	deliveryList.classList.add("modal-delivery-list");
-	menuSection.classList.add("menu-section");
-	menuLogo.classList.add("menu-logo");
-	menuLink.classList.add("modal-menu-link");
+    modalPage.classList.add("modal-page");
+    allElement.classList.add("all-elements-modal");
+    photoSection.classList.add("photo-section");
+    pageImage.classList.add("modal-page-image");
+    restaurantTitle.classList.add("restaurant-title");
+    measureSection.classList.add("measure-section");
+    price.classList.add("price");
+    rating.classList.add("rating");
+    scheduleSection.classList.add("schedule-section");
+    scheduleImage.classList.add("modal-schedule-image");
+    pageList.classList.add("modal-page-list");
+    deliverySection.classList.add("delivery-section");
+    truck.classList.add("truck");
+    deliveryList.classList.add("modal-delivery-list");
+    menuSection.classList.add("menu-section");
+    menuLogo.classList.add("menu-logo");
+    menuLink.classList.add("modal-menu-link");
+	closedButton.classList.add("closed-button");
+	containerClosed.classList.add("container-closed");
+    
+    pageImage.src = element.image;
+    restaurantTitle.innerHTML = element.name;
+    price.innerHTML = element.price;
+    rating.innerHTML = element.rating;
+    scheduleImage.src = "./image/horaire.png";
+    truck.src = "./image/truck.png";
+    menuLogo.src = "./image/logomenu.png";
+    menuLink.innerHTML = element.url;
+    closedButton.src = "./image/closedbutton.png";
 
-	pageImage.src = element.image;
-	restaurantTitle.innerHTML = element.name;
-	price.innerHTML = element.price;
-	rating.innerHTML = element.rating;
-	scheduleImage.src = "./image/horaire.png";
-	truck.src = "./image/truck.png";
-	menuLogo.src = "./image/logomenu.png";
-	menuLink.innerHTML = element.url;
+	closedButton.addEventListener("click", () => {
+		transparentPage.removeChild(transparentPage.firstChild);
+	})
 
-	photoSection.appendChild(pageImage);
-	photoSection.appendChild(restaurantTitle);
-	measureSection.appendChild(price);
-	measureSection.appendChild(rating);
-	scheduleSection.appendChild(scheduleImage);
-	for (let hour of element.openingHours) {
-		const schedule = document.createElement("li");
-		schedule.classList.add("schedule");
-		schedule.innerHTML = hour;
-		pageList.appendChild(schedule);
-	}
-	scheduleSection.appendChild(pageList);
-	console.log(pageList);
-
-	deliverySection.appendChild(truck);
-
-	for (let order of element.delivery) {
-		const delivery = document.createElement("li");
-		delivery.classList.add("delivery");
-		delivery.innerHTML = order;
-		deliveryList.appendChild(delivery);
-	}
+    photoSection.appendChild(pageImage);
+    photoSection.appendChild(restaurantTitle);
+    measureSection.appendChild(price);
+    measureSection.appendChild(rating);
+    scheduleSection.appendChild(scheduleImage);
+    for (let hour of element.openingHours){
+        const schedule = document.createElement("li");
+        schedule.classList.add("schedule");
+        schedule.innerHTML = hour;
+        pageList.appendChild(schedule);   
+    }
+    scheduleSection.appendChild(pageList);
+    console.log(pageList);
+    
+    deliverySection.appendChild(truck);
+    
+    for(let order of element.delivery){
+        const delivery = document.createElement("li");
+        delivery.classList.add("delivery");
+        delivery.innerHTML = order;
+        deliveryList.appendChild(delivery);
+    }
 
 	deliverySection.appendChild(deliveryList);
 	menuSection.appendChild(menuLogo);
@@ -149,6 +158,17 @@ function createModal(element) {
 	allElement.appendChild(scheduleSection);
 	allElement.appendChild(deliverySection);
 	allElement.appendChild(menuSection);
+    deliverySection.appendChild(deliveryList);
+    menuSection.appendChild(menuLogo);
+    menuSection.appendChild(menuLink);
+    
+	containerClosed.appendChild(closedButton);
+	allElement.appendChild(containerClosed);
+    allElement.appendChild(photoSection);
+    allElement.appendChild(measureSection);
+    allElement.appendChild(scheduleSection);
+    allElement.appendChild(deliverySection);
+    allElement.appendChild(menuSection);
 
 	modalPage.appendChild(allElement);
 	transparentPage.insertBefore(modalPage, transparentPage.firstChild);
