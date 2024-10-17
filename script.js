@@ -115,7 +115,18 @@ function createModal(element){
     pageImage.src = element.image;
     restaurantTitle.innerHTML = element.name;
     price.innerHTML = element.price;
-    rating.innerHTML = element.rating;
+    if (element.rating === "1") {
+        rating.src = './image/oneStar.png'
+    } else if (element.rating === "2") {
+        rating.src ='./image/twoStar.png'
+    } else if (element.rating === "3") {
+        rating.src ='./image/threeStar.png'
+    } else if (element.rating === "4") {
+        rating.src ='./image/fourStar.png'
+    } else if (element.rating === "5") {
+        rating.src ='./image/fiveStar.png'
+    }
+
     scheduleImage.src = "./image/horaire.png";
     truck.src = "./image/truck.png";
     menuLogo.src = "./image/logomenu.png";
