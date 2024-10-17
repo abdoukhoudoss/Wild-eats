@@ -72,25 +72,26 @@ function createPromo(restaurant) {
 function createModal(element) {
 	const transparentPage = document.querySelector(".transparent-page");
 
-	const modalPage = document.createElement("article");
-	const allElement = document.createElement("section");
-	const photoSection = document.createElement("section");
-	const pageImage = document.createElement("img");
-	const restaurantTitle = document.createElement("h2");
-	const measureSection = document.createElement("section");
-	const price = document.createElement("p");
-	const rating = document.createElement("img");
-	const scheduleSection = document.createElement("section");
-	const scheduleImage = document.createElement("img");
-	const pageList = document.createElement("ul");
-	const deliverySection = document.createElement("section");
-	const truck = document.createElement("img");
-	const deliveryList = document.createElement("ul");
-	const menuSection = document.createElement("section");
-	const menuLogo = document.createElement("img");
-	const menuLink = document.createElement("a");
-	const containerClosed = document.createElement("section");
-	const closedButton = document.createElement("img");
+    const parent = document.createElement('section')
+    const modalPage = document.createElement("article");
+    const allElement = document.createElement("section");
+    const photoSection = document.createElement("section");
+    const pageImage = document.createElement("img");
+    const restaurantTitle = document.createElement("h2");
+    const measureSection = document.createElement("section");
+    const price = document.createElement("p");
+    const rating = document.createElement("img");
+    const scheduleSection = document.createElement("section");
+    const scheduleImage = document.createElement("img");
+    const pageList = document.createElement("ul");
+    const deliverySection = document.createElement("section");
+    const truck = document.createElement("img");
+    const deliveryList = document.createElement("ul");
+    const menuSection = document.createElement("section");
+    const menuLogo = document.createElement("img");
+    const menuLink = document.createElement("a");
+    const containerClosed = document.createElement("section");
+	const closedButton	= document.createElement("img");
 
 	modalPage.classList.add("modal-page");
 	allElement.classList.add("all-elements-modal");
@@ -111,21 +112,22 @@ function createModal(element) {
 	menuLink.classList.add("modal-menu-link");
 	closedButton.classList.add("closed-button");
 	containerClosed.classList.add("container-closed");
-
-	pageImage.src = element.image;
-	restaurantTitle.innerHTML = element.name;
-	price.innerHTML = element.price;
-	if (element.rating === "1") {
-		rating.src = "./image/oneStar.png";
-	} else if (element.rating === "2") {
-		rating.src = "./image/twoStar.png";
-	} else if (element.rating === "3") {
-		rating.src = "./image/threeStar.png";
-	} else if (element.rating === "4") {
-		rating.src = "./image/fourStar.png";
-	} else if (element.rating === "5") {
-		rating.src = "./image/fiveStar.png";
-	}
+    parent.classList.add('parent-modal')
+    
+    pageImage.src = element.image;
+    restaurantTitle.innerHTML = element.name;
+    price.innerHTML = element.price;
+    if (element.rating === "1") {
+        rating.src = './image/oneStar.png'
+    } else if (element.rating === "2") {
+        rating.src ='./image/twoStar.png'
+    } else if (element.rating === "3") {
+        rating.src ='./image/threeStar.png'
+    } else if (element.rating === "4") {
+        rating.src ='./image/fourStar.png'
+    } else if (element.rating === "5") {
+        rating.src ='./image/fiveStar.png'
+    }
 
 	scheduleImage.src = "./image/horaire.png";
 	truck.src = "./image/truck.png";
@@ -181,8 +183,9 @@ function createModal(element) {
 	allElement.appendChild(deliverySection);
 	allElement.appendChild(menuSection);
 
-	modalPage.appendChild(allElement);
-	transparentPage.insertBefore(modalPage, transparentPage.firstChild);
+    modalPage.appendChild(allElement);
+    parent.appendChild(modalPage)
+    transparentPage.insertBefore(parent, transparentPage.firstChild);
 }
 
 function trie(ordre, element, array) {
