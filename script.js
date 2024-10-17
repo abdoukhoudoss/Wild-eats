@@ -72,6 +72,7 @@ function createPromo(restaurant) {
 function createModal(element){
     const transparentPage = document.querySelector(".transparent-page");
 
+    const parent = document.createElement('section')
     const modalPage = document.createElement("article");
     const allElement = document.createElement("section");
     const photoSection = document.createElement("section");
@@ -111,6 +112,7 @@ function createModal(element){
     menuLink.classList.add("modal-menu-link");
 	closedButton.classList.add("closed-button");
 	containerClosed.classList.add("container-closed");
+    parent.classList.add('parent-modal')
     
     pageImage.src = element.image;
     restaurantTitle.innerHTML = element.name;
@@ -173,7 +175,8 @@ function createModal(element){
     allElement.appendChild(menuSection);
 
     modalPage.appendChild(allElement);
-    transparentPage.insertBefore(modalPage, transparentPage.firstChild);
+    parent.appendChild(modalPage)
+    transparentPage.insertBefore(parent, transparentPage.firstChild);
 }
 
 

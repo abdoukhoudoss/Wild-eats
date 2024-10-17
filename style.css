@@ -245,6 +245,7 @@ footer {
   justify-content: center;
   margin:5px;
   z-index: 1;
+  max-width: 550px;
 }
 
 .all-elements-modal{
@@ -349,3 +350,10 @@ h3 {
 .rating {
 	width: 120px;
 }
+
+.parent-modal {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
