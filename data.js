@@ -457,6 +457,65 @@ export const data = [
         "discount":false,
         "distance": 1600,
         "index": 16
+    }, 
+    // Restaurant 17 : Chez Cesar
+    {
+        "name": "Chez Cesar",
+        "price": "€",
+        "rating": "4",
+        "image": "./image/chez-cesar.jpg",
+        "openingHours": [
+            "Lundi - 8h30 21h",
+            "Mardi - 8h30 21h",
+            "Mercredi - 8h30 21h",
+            "Jeudi - 8h30 21h",
+            "Vendredi - 8h30 21h",
+            "Samedi - 8h30 21h",
+            "Dimanche - 8h30 21h",
+        ],
+        "filter": [
+            "asiatique",
+            "fast-food"
+        
+        ],
+        "url": "https://chezcesar.fr/#menu",
+        "delivery": [
+            "Click & Collect",
+            "Emporter",
+            "Livraison"
+        ],
+        "discount":true,
+        "distance": 500,
+        "index": 17
     },
-   
+  // Restaurant 18 : Monsieur Georges
+    {
+        "name": "Monsieur Georges",
+        "price": "€€",
+        "rating": "5",
+        "image": "./image/monsieur-georges.jpg",
+        "openingHours": [
+            "Lundi - 12h 23h",
+            "Mardi - 12h 23h",
+            "Mercredi - 12h 23h",
+            "Jeudi - 12h 23h",
+            "Vendredi - 12h 23h",
+            "Samedi - 12h 23h",
+            "Dimanche - 12h 23h",
+        ],
+        "filter": [
+            "europeen",
+            "gastronomique"
+        
+        ],
+        "url": "https://www.monsieurgeorges.fr/fr/nos-cartes/",
+        "delivery": [
+            "Click & Collect",
+            "Emporter",
+            "Livraison"
+        ],
+        "discount":false,
+        "distance": 300,
+        "index": 18
+    },  
 ]
