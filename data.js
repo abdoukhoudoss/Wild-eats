@@ -201,7 +201,7 @@ export const data = [
         "name": "Don Vicenzo",
         "price": "€€€",
         "rating": "5",
-        "image": "./image/ksar.jpeg",
+        "image": "./image/don-vicenzo.jpg",
         "openingHours": [
             "Lundi - 11h 14h30 / 18h30 23h30",
             "Mardi - 11h 14h30 / 18h30 23h30",
