@@ -133,6 +133,7 @@ function createModal(element) {
 	truck.src = "./image/truck.png";
 	menuLogo.src = "./image/logomenu.png";
 	menuLink.innerHTML = element.url;
+    menuLink.href = element.url;
 	closedButton.src = "./image/closedbutton.png";
 
 	closedButton.addEventListener("click", () => {
